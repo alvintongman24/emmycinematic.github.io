@@ -1,0 +1,1253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+    overflow: scroll;
+    
+}
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.disppear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+/* body */
+
+body {
+    font-family: "open Sans", sans-serif;
+   
+
+}
+
+/* body */
+
+
+
+
+/* header-nav */
+
+
+#nav-checkbox,
+.nav-toggle {
+    display: none;
+}
+
+header {
+    display: inline-flex;
+    position: fixed;
+    background-color: transparent;
+    transition: top 0.3s;
+    width: 100%;
+    height: 20%;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+
+}
+
+
+.next {
+    position: fixed;
+    margin-top: 20px;
+    display: inline-flex;
+    margin-left: 50%;
+    float: right;
+    justify-content: space-between;
+
+}
+
+.next i {
+    margin-bottom: 10px;
+}
+
+.next input {
+    border: 1px solid gold;
+    background-color: white;
+    width: 70%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 100px;
+    font-style: italic;
+    margin-top: 2%;
+    margin-left: 0;
+}
+
+
+
+.closebtn,
+.openbtn {
+    display: none;
+
+}
+
+.logo h2 i {
+    color: gold;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.logo h2 {
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 2px;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+
+.sidepanel h1 {
+    display: none;
+}
+
+
+.sidepanel ul {
+    float: right;
+    margin-right: 40px;
+    display: none;
+    position: fixed;
+    color: #fff;
+}
+
+.sidepanel li {
+    display: block;
+    margin-right: 50px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.sidepanel li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    display: block;
+}
+
+
+
+.sidepanel li a:hover {
+    color: gold;
+    transition: 0.5s;
+
+}
+
+
+
+.sidepanel ul li:hover .dropdown {
+
+    display: block;
+    margin-top: 0px;
+
+
+}
+
+
+.dropdown ul {
+    border: 1px solid black;
+    background-color: gray;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+
+.sidepanel ul li:hover .dropdown ul {
+    float: none;
+    display: block;
+    margin: 0px;
+    position: fixed;
+}
+
+
+
+.dropdown {
+    display: none;
+
+}
+
+
+
+
+/* header nav */
+
+
+
+
+/* container 1 */
+.container1{
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+    font-size: 50px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)),
+url("skyscraper.jpeg");
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+width: 100%;
+animation: change 10s infinite ease-in-out;
+
+}
+
+
+@keyframes change{
+    0%{
+        background-image: url('blackyellow.jpeg');
+    }
+
+    20%{
+        background-image: url('look.jpeg');
+    }
+
+    40%{
+        background-image: url('groupinterview.jpeg');
+    }
+
+    60%{
+        background-image: url('strange.jpg');
+    }
+
+    100%{
+        background-image: url('dracula-vs-superman-4k-ui.jpeg');
+    }
+}
+
+
+
+
+
+
+
+
+
+.container1 a button{
+    border: 1px solid #fff;
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+
+.container1 a button:hover{
+    border: 1px solid #000;
+    background-color: gold;
+    transition: all 3s;
+    box-shadow: #000;
+    transform:rotate(360deg);
+   
+    
+}
+
+.container1 .follow p{
+    font-size: large;
+    padding-top: 20px;
+}
+
+
+.container1 .follow p i{
+   color: gold;
+}
+
+
+.container1 h1, .container1 p {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+/* container2 */
+
+.container2{
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 200px 0;
+    
+}
+
+
+.container2 p{
+    color: gold;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.container2 h2{
+   font-size: 50px;
+    
+}
+
+
+
+.container2 h6{
+   
+    font-size: 20px;
+    padding: 2% 20%;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    
+ }
+ 
+
+.container4, .container3 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0f0d0d;
+    padding: 50px 0;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.container3 .third p,.container3 .forth p{
+    color: gold;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.swiper-container{
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+   overflow: hidden;
+}
+
+
+
+.swiper-wrapper{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display: flex;
+}
+
+
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 10px;
+    height: 300px;
+}
+
+
+
+.container5{
+    display: flex;
+    overflow-x: hidden;
+    text-decoration: none;
+
+}
+
+.dream{
+    background: url('phone.PNG');
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.dream h1,
+.dream p{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.dream:hover{
+    animation: changes 10s infinite ease-in-out;
+
+}
+
+
+@keyframes changes{
+    0%{
+        background-image: url('phone.PNG');
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    20%{
+        background-image: url('phone2.PNG');
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    40%{
+        background-image: url('phone3.PNG');
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    60%{
+        background-image: url('phone4.PNG');
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    100%{
+        background-image: url('phone2.PNG');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+}
+
+
+
+.advert{
+    background: url('phone6.PNG');
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.advert h1,
+.advert p{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+.advert:hover{
+    animation: chan 10s infinite ease-in-out;
+    transition: all;
+    transition-delay: 1s;
+}
+
+
+@keyframes chan{
+    0%{
+        background-image: url('phone6.PNG');
+      
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    20%{
+        background-image: url('phone7.PNG');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    40%{
+        background-image: url('phone5.PNG');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    60%{
+        background-image: url('phone7.PNG');
+      
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    100%{
+        background-image: url('phone6.PNG');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+}
+
+
+
+
+
+.dream2{
+    background: url('social5.jpeg');
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.dream2 h1,
+.dream2 p{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+.dream2:hover{
+    animation: cha 10s infinite ease-in-out;
+
+}
+
+
+@keyframes cha{
+    0%{
+        background-image: url('social5.jpeg');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    20%{
+        background-image: url('social6.jpeg');
+        
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    40%{
+        background-image: url('girl-playing-with-cat-4k-au.jpeg');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    60%{
+        background-image: url('groupinterview.jpeg');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    100%{
+        background-image: url('girl.jpg');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+}
+
+
+
+.advert2{
+    background: url('pilot1.jpg');
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.advert2 h1,
+.advert2 p{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+.advert2:hover{
+    animation: chang 10s infinite ease-in-out;
+
+}
+
+
+@keyframes chang{
+    0%{
+        background-image: url('pilot1.jpg');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    20%{
+        background-image: url('pilot3.jpg');
+      
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    40%{
+        background-image: url('pilot4.jpg');
+         
+        transition: all;
+        transition-delay: 1s;
+    }
+
+    60%{
+        background-image: url('pilot5.jpg');
+       
+        transition-delay: 1s;
+    }
+
+    100%{
+        background-image: url('pilot6.jpg');
+       
+        transition: all;
+        transition-delay: 1s;
+    }
+}
+
+
+
+
+
+
+.dream2 h1, .advert2 h1{
+    padding-top: 300px;
+  }
+  
+  
+
+.dream h1, .advert h1{
+  padding-top: 300px;
+}
+
+
+
+
+.container6{
+    background-color: #000;
+    display: flex;
+    padding: 200px 0;
+
+}
+
+.sub{
+    display: flex;
+   width: 60%;
+}
+
+
+
+.sub .sub1{
+    display:block;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+.sub .sub1 h3 i{
+  color: gold;
+  font-size: 100px;
+}
+
+
+.sub .sub1 h3{
+    color: gray;
+   
+ }
+ 
+.suppoted{
+    display: flex;
+}
+
+ 
+.suppoted .one{
+    height: 400px;
+    border: 1px solid #818181;
+    border-radius: 20px;
+    background-color: #000;
+    margin-left: 10px;
+    text-align: left;
+ }
+
+
+.suppoted .one:hover {
+    box-shadow: 0 0px 0px 2px rgba(255, 255, 255, 0.2);
+    /* box-shadow: 0 5px 25px 0px rgba(2, 1, 1, 0.5); */
+    transform: scale(1.05);
+    max-width: 390px;
+    transition: all;
+    transition-duration:1s ;
+  
+  }
+
+
+
+.suppoted .one p{
+    font-size: medium;
+   padding-top: 50px;
+   padding-left: 2px;
+ }
+ 
+ 
+.suppoted .one img{
+    height: 300px;
+    border-radius: 20px;
+   
+ }
+
+
+
+ .container-8 {
+    background-image:url('windows-11-oled-32.jpeg') ;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-8 .letter-2 {
+    display: flex;
+    padding-bottom: 120px;
+  }
+  
+  
+  .container-8 .letter-2 h5 a {
+    display: flex;
+    padding-left: 100px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  
+  .container-8 .letter-2 h5 a:hover {
+  
+    color: gold;
+  }
+  
+  
+  .container-8 .next-2 a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #818181;
+  
+  }
+  
+  
+  
+  .container-8 .next-2 a i {
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: gold;
+    color: #fff;
+  
+  }
+  
+  
+  .container-8 .next-2 a i:hover {
+    color: black;
+    background-color: #fff;
+  }
+  
+  
+  
+  footer {
+    background-image:url('windows-11-oled-32.jpeg') ;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .fo b {
+    color: gold;
+  }
+  
+  footer .ot a {
+    font-size: 50px;
+    color: gold;
+    word-spacing: 50px;
+    padding: 0px 20px;
+  }
+  
+  
+  #preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  
+  }
+  
+  .disppear {
+    animation: vanish 5s forwards;
+  }
+  
+  @keyframes vanish {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+ 
+
+@media(max-width:800px) {
+
+
+    header {
+        background-color: #000;
+        align-items: normal;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* width: 100%; */
+        display: flex;
+        padding: 2px 0px;
+        justify-content: space-between;
+        transition: background-color 2s ease;
+        margin-right: 0;
+        z-index: 1;
+
+    }
+
+    .logo {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+
+
+    .logo h2 {
+        margin-top: 40px;
+    }
+
+
+
+    .next {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+
+
+    .sidepanel ul li:hover .dropdown ul {
+        display: none;
+    }
+
+
+    .sidepanel ul li:hover .dropdown {
+
+        display: none;
+
+
+    }
+
+
+    .nav-toggle {
+        width: 25px;
+    }
+
+    .close,
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+
+    .sidepanel {
+        height: 100%;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #090220;
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 2s;
+        /* 0.5 second transition effect to slide in the sidepanel */
+        display: block;
+
+    }
+
+
+    .sidepanel ul {
+        float: none;
+        margin-right: 0;
+        display: block;
+        opacity: 0.5;
+    }
+
+
+    .dropdown ul {
+        border: 1px solid black;
+        background-color: gray;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+
+
+    .sidepanel li {
+        display: inline-block;
+        margin-right: 0px;
+        border-bottom: 1px white solid;
+        border-top: 1px white solid;
+        width: 100%;
+    }
+
+    /* The sidepanel links */
+    .sidepanel li a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+
+    }
+
+    .sidepanel h1 {
+        color: #fff;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+
+    .sidepanel h1 i {
+        color: gold;
+        padding-bottom: 50px;
+
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel li a:hover {
+        color: gold;
+        border-top: 1px solid gold;
+        border-bottom: 1px solid gold;
+        padding-left: 50px;
+        transition: all;
+        transition-duration: 2s;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 36px;
+        margin-right: 30px;
+        border: 1px solid transparent;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 60px;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        padding: 10px 15px;
+        margin-inline: 0;
+        justify-content: space-between;
+        display: block;
+    }
+
+    .openbtn:hover {
+        color: gold;
+        transition: 2s;
+
+    }
+
+    .closebtn:hover {
+        color: gold;
+        border: none;
+        transform: rotate(360deg);
+        transition: 5s;
+        transition-duration: 2s;
+    }
+
+
+
+
+    .container1{
+       
+        padding: 150px 0;
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+    
+
+    
+    
+    
+    /* container2 */
+    
+    
+    
+    .container2 h2{
+       font-size: 20px;
+       word-spacing: 5px; 
+       padding-bottom: 20px ;
+    }
+    
+    
+    
+    .container2 h6{
+       
+        font-size: 20px;
+        padding:0;
+        text-align: center;
+        word-spacing: 5px;
+        letter-spacing: 0px;
+        display: block;
+     }
+     
+    
+    .container3 {
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        background-color: #0f0d0d;
+        padding: 50px 0;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+
+    }
+    
+    
+    .swiper-container{
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    
+       
+    }
+    
+   .container5{
+    display: block;
+   } 
+    
+.dream ,.dream2,.advert,.advert2{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.sub{
+    display: flex;
+   width:100%;
+}
+
+.sub .sub1{
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+
+.container6{
+    display: block;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+.container6 .pic{
+    display: block;
+    
+}
+   
+
+.container6 .main{
+    padding-top: 100px;
+    
+}
+
+.container6 p{
+    text-align: center;
+}
+
+
+.suppoted{
+    display: block;
+}
+
+
+.suppoted .one{
+   border: 1px solid transparent;
+   width: 60%;
+   margin: 20%;
+ }
+
+ .suppoted
+
+
+.suppoted .one img{
+    height: 400px;
+    border: 1px solid #818181;
+    border-radius: 20px;
+    background-color: #000;
+    margin-left: 0px;
+    text-align: center;
+ }
+
+
+   
+
+  .container-8 {
+    display: block;
+    text-align: center;
+
+  }
+
+  .container-8 .letter-2 {
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+
+  .container-8 .letter-2 h5 a {
+    display: flex;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+
+  .container-8 .letter-2 h5 a:hover {
+
+    color: gold;
+  }
+
+
+  .container-8 .next-2 a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #818181;
+
+  }
+
+
+
+  .container-8 .next-2 a i {
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s linear;
+
+  }
+
+
+  .container-8 .next-2 a i:hover {
+    transform: scale(1.5);
+    color: gold;
+  }
+
+
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  footer .fo b {
+    color: gold;
+  }
+
+
+  footer .fo {
+    padding: 50px 0px;
+  }
+
+
+
+  footer .ot a {
+
+    font-size: 20px;
+    color: gold;
+    word-spacing: 10px;
+  }
+
+
+  #preloader {
+    background: #000 url('giphy.gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+  }
+
+}

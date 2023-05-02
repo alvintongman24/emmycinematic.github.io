@@ -1,0 +1,680 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+    
+}
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.disppear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+/* body */
+
+body {
+    font-family: "open Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url("skyscraper.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+/* body */
+
+
+
+
+/* header-nav */
+
+
+#nav-checkbox,
+.nav-toggle {
+    display: none;
+}
+
+header {
+    display: inline-flex;
+    position: sticky;
+    background-color: transparent;
+    transition: top 0.3s;
+    width: 100%;
+    height: 20%;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+
+}
+
+
+.next {
+    margin-top: 20px;
+    display: inline-flex;
+    margin-left: 50%;
+    float: right;
+    justify-content: space-between;
+
+}
+
+.next i {
+    margin-bottom: 10px;
+}
+
+.next input {
+    border: 1px solid gold;
+    background-color: white;
+    width: 70%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 100px;
+    font-style: italic;
+    margin-top: 2%;
+    margin-left: 0;
+}
+
+
+
+.closebtn,
+.openbtn {
+    display: none;
+
+}
+
+.logo h2 i {
+    color: gold;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.logo h2 {
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 2px;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+
+.sidepanel h1 {
+    display: none;
+}
+
+
+.sidepanel ul {
+    float: right;
+    margin-right: 40px;
+    display: none;
+    position: fixed;
+    color: #fff;
+}
+
+.sidepanel li {
+    display: block;
+    margin-right: 50px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.sidepanel li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    display: block;
+}
+
+
+
+.sidepanel li a:hover {
+    color: gold;
+    transition: 0.5s;
+
+}
+
+
+
+.sidepanel ul li:hover .dropdown {
+
+    display: block;
+    margin-top: 0px;
+
+
+}
+
+
+.dropdown ul {
+    border: 1px solid black;
+    background-color: gray;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+
+.sidepanel ul li:hover .dropdown ul {
+    float: none;
+    display: block;
+    margin: 0px;
+    position: fixed;
+}
+
+
+
+.dropdown {
+    display: none;
+
+}
+
+
+
+
+/* header nav */
+
+
+/* topic */
+
+.topic{
+    text-align: center;
+    color:gold;
+    margin:200px 0 ;
+   
+}
+
+
+.topic h1{
+    margin:100px 0 ;
+    letter-spacing: 5px;
+}
+
+
+.topic button{
+   border: 1px solid #000;
+   border-radius: 20px;
+   height: 50px;
+   width: 150px;
+   font-size: 15px;
+   font-weight: 600;
+   box-shadow: 0 60px 12px -18px rgb(255, 255, 255), 0 60px 20px -12px rgb(245, 240, 240);
+   letter-spacing: 1px;
+   word-spacing: 2px;
+   animation: anime 1s infinite ease-in-out alternate;
+   -webkit-animation: anime 1s infinite ease-in-out alternate;
+   animation-delay: 3s;
+}
+
+@keyframes anime{
+    100%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transition:translateY(20px) ;
+        -o-transform: translateY(20px);
+        box-shadow: 0 40px 10px -18px rgb(252, 247, 247),0 40px 16px -12px rgb(235, 232, 232),0,40px,16px,-12px rgb(255, 251, 251);
+    }
+}
+
+.topic button:hover{
+   background-color: gold;
+   color: #000;
+   transition-duration: 2s;
+}
+ 
+
+
+
+
+
+    /*  card */
+
+
+
+
+.card {
+   
+    background: gray;
+    max-width: 325px;
+    width: 325px;
+    height: auto;
+    margin: 25px;
+     box-shadow: 0 5px 25px rgba(237, 234, 234, 0.815); 
+    border-radius: 10px;
+    overflow: hidden;
+    color: gold;
+    transition: all 0.4s linear;
+
+}
+
+
+.card:hover {
+    box-shadow: 0 0px 0px 2px rgba(255, 255, 255, 0.2);
+    /* box-shadow: 0 5px 25px 0px rgba(2, 1, 1, 0.5); */
+    transform: scale(1.05);
+    max-width: 390px;
+    opacity: 0.5;
+}
+
+
+.card .top h3{
+    border: 1px solid black;
+    height: 70px;
+    background-color: #000;
+    color: gold;
+    padding-top: 50px;
+}
+
+
+.card-image {
+    max-height: 200px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.card-content1{
+    margin-bottom:200px;
+}
+
+
+
+
+.card-content2 {
+    
+    margin-left: 70%;
+    margin-bottom:200px;
+}
+
+
+
+.card-content3{
+    margin-bottom:200px;
+}
+
+
+
+.card-content4{
+    margin-left: 70%;
+    margin-bottom:200px;
+}
+
+
+
+.card-content5{
+    margin-bottom:200px;
+}
+
+
+
+.card-content6{
+    margin-left: 70%;
+    margin-bottom:500px;
+}
+
+
+
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .fo b {
+    color: gold;
+}
+
+footer .ot a {
+    font-size: 50px;
+    color: gold;
+    word-spacing: 50px;
+    padding: 0px 20px;
+}
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.disppear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    @media(max-width:800px) {
+
+
+    header {
+        align-items: normal;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* width: 100%; */
+        display: flex;
+        padding: 2px 0px;
+        justify-content: space-between;
+        transition: background-color 2s ease;
+        margin-right: 0;
+        z-index: 1;
+
+    }
+
+    .logo {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+
+
+    .logo h2 {
+        margin-top: 40px;
+    }
+
+
+
+    .next {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+
+
+    .sidepanel ul li:hover .dropdown ul {
+        display: none;
+    }
+
+
+    .sidepanel ul li:hover .dropdown {
+
+        display: none;
+
+
+    }
+
+
+    .nav-toggle {
+        width: 25px;
+    }
+
+    .close,
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+
+    .sidepanel {
+        height: 100%;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #090220;
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 2s;
+        /* 0.5 second transition effect to slide in the sidepanel */
+        display: block;
+
+    }
+
+
+    .sidepanel ul {
+        float: none;
+        margin-right: 0;
+        display: block;
+        opacity: 0.5;
+    }
+
+
+    .dropdown ul {
+        border: 1px solid black;
+        background-color: gray;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+
+
+    .sidepanel li {
+        display: inline-block;
+        margin-right: 0px;
+        border-bottom: 1px white solid;
+        border-top: 1px white solid;
+        width: 100%;
+    }
+
+    /* The sidepanel links */
+    .sidepanel li a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+
+    }
+
+    .sidepanel h1 {
+        color: #fff;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+
+    .sidepanel h1 i {
+        color: gold;
+        padding-bottom: 50px;
+
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel li a:hover {
+        color: gold;
+        border-top: 1px solid gold;
+        border-bottom: 1px solid gold;
+        padding-left: 50px;
+        transition: all;
+        transition-duration: 2s;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 36px;
+        margin-right: 30px;
+        border: 1px solid transparent;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 60px;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        padding: 10px 15px;
+        margin-inline: 0;
+        justify-content: space-between;
+        display: block;
+    }
+
+    .openbtn:hover {
+        color: gold;
+        transition: 2s;
+
+    }
+
+    .closebtn:hover {
+        color: gold;
+        border: none;
+        transform: rotate(360deg);
+        transition: 5s;
+        transition-duration: 2s;
+    }
+
+
+.card-content1{
+    margin-left: 0;
+    overflow: hidden;
+}
+
+
+
+
+.card-content2 {
+    
+    margin-left: 0;
+    overflow: hidden;
+}
+
+
+
+.card-content3{
+    margin-left: 0;
+    overflow: hidden;
+}
+
+
+
+.card-content4{
+    margin-left: 0;
+    overflow: hidden;
+}
+
+
+
+.card-content5{
+    margin-left: 0;
+    overflow: hidden;
+}
+
+
+
+.card-content6{
+    margin-left: 0;
+     overflow: hidden;
+}
+
+
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+footer .fo b {
+    color: gold;
+}
+
+
+footer .fo {
+    padding: 50px 0px;
+}
+
+
+
+footer .ot a {
+
+    font-size: 20px;
+    color: gold;
+    word-spacing: 10px;
+}
+
+
+#preloader {
+    background: #000 url('giphy.gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+
+    }

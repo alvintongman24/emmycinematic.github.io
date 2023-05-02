@@ -1,0 +1,1058 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.disppear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+/* first header */
+.first {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    padding: 30px 50px;
+    padding-bottom: 40px;
+    display: fixed;
+
+}
+
+
+.first .first-1 p {
+    padding-top: 20px;
+}
+
+
+.first .first-1 p b {
+    color: gold;
+}
+
+
+
+.first .first-2 {
+    display: flex;
+    padding-right: 20px;
+}
+
+
+.first .first-2 a p {
+    color: gray;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+
+.first .first-2 a {
+    text-decoration: none;
+
+}
+
+
+
+.first .first-2 i {
+    padding-top: 20px;
+    padding-left: 10px;
+    color: gray;
+    text-decoration: none;
+}
+
+
+.first .first-2 i:hover {
+    color: gold;
+
+}
+
+.first .first-2 a p:hover {
+    color: gold;
+}
+
+/* first header */
+
+
+/* body */
+
+body {
+    font-family: "open Sans", sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url("power.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+/* body */
+
+
+
+
+/* header-nav */
+
+
+#nav-checkbox,
+.nav-toggle {
+    display: none;
+}
+
+header {
+    display: inline-flex;
+    position: sticky;
+    background-color: transparent;
+    transition: top 0.3s;
+    width: 100%;
+    height: 20%;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+
+}
+
+
+.next {
+    margin-top: 20px;
+    display: inline-flex;
+    margin-left: 50%;
+    float: right;
+    justify-content: space-between;
+
+}
+
+.next i {
+    margin-bottom: 10px;
+}
+
+.next input {
+    border: 1px solid gold;
+    background-color: white;
+    width: 70%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 100px;
+    font-style: italic;
+    margin-top: 2%;
+    margin-left: 0;
+}
+
+
+
+.closebtn,
+.openbtn {
+    display: none;
+
+}
+
+.logo h2 i {
+    color: gold;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.logo h2 {
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 2px;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+
+.sidepanel h1 {
+    display: none;
+}
+
+
+.sidepanel ul {
+    float: right;
+    margin-right: 40px;
+    display: flex;
+    position: fixed;
+    color: #fff;
+}
+
+.sidepanel li {
+    display: block;
+    margin-right: 50px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.sidepanel li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    display: block;
+}
+
+
+
+.sidepanel li a:hover {
+    color: gold;
+    transition: 0.5s;
+
+}
+
+
+
+.sidepanel ul li:hover .dropdown {
+
+    display: block;
+    margin-top: 0px;
+
+
+}
+
+
+.dropdown ul {
+    border: 1px solid black;
+    background-color: gray;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+
+.sidepanel ul li:hover .dropdown ul {
+    float: none;
+    display: block;
+    margin: 0px;
+    position: fixed;
+}
+
+
+
+.dropdown {
+    display: none;
+
+}
+
+
+
+
+/* header nav */
+
+
+/* container-1 */
+
+.container-1 {
+    text-align: center;
+    color: #fff;
+    margin: 100px 0px;
+    padding: 200px 0;
+}
+
+
+.container-1 h1 b {
+    color: gold;
+}
+
+
+.container-1 h1 {
+    margin-bottom: 50px;
+}
+
+/* container-1 */
+
+
+
+
+/* container-2 */
+
+
+.container-2 {
+    background-image: url("laptop.jpg");
+    background-size: cover;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    padding-top: 200px;
+    display: flex;
+}
+
+
+.container-2 p {
+    color: goldenrod;
+    font-size: smaller;
+    padding-bottom: 20px;
+    font-size: larger;
+
+}
+
+.container-2 h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+
+.container-2 .video {
+
+    padding-left: 100px;
+}
+
+
+.container-2 .text {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+
+
+
+
+.container-3 {
+    padding: 300px 50px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-image: url('skyscraper.jpeg');
+    background-position: cover;
+
+}
+
+.card-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    background: gray;
+    max-width: 325px;
+    width: 325px;
+    height: auto;
+    margin: 25px;
+    /* box-shadow: 0 5px 2c5px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.4s linear;
+
+}
+
+
+.card:hover {
+    box-shadow: 0 0px 0px 2px rgba(255, 255, 255, 0.2);
+    /* box-shadow: 0 5px 25px 0px rgba(2, 1, 1, 0.5); */
+    transform: scale(1.05);
+    max-width: 390px;
+    opacity: 0.5;
+}
+
+.card-image {
+    max-height: 200px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card .all {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.card .all i,
+.card .all h3 {
+    color: gold;
+}
+
+
+
+
+.yellow {
+    background-color: gold;
+    margin: 100px 0;
+    padding: 30px;
+    color: #000;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inp {
+    display: flex;
+    font-weight: 1000;
+}
+
+.yellow input {
+    background-color: #fff;
+    height: 60px;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+.inp button {
+    margin-left: -50px;
+    width: 150px;
+    height: 60px;
+    color: gold;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+
+.inp button:hover {
+
+    background-color: gold;
+    width: 150px;
+    height: 60px;
+    color: #000;
+    border: 1px solid #fff;
+    transition: all 1s;
+
+}
+
+
+.container-7 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    background-image: url("windows-11-oled-32.jpeg");
+}
+
+
+
+
+.container-7 .letter {
+    display: flex;
+}
+
+
+.container-7 .letter h5 {
+    display: flex;
+    padding-left: 80px;
+
+}
+
+
+.container-7 .letter h5 a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+.container-7 .letter h5 a:hover {
+
+    color: gold;
+
+}
+
+
+.log h2 i {
+    color: gold;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid gold;
+}
+
+
+.log h2 {
+    color: #fff;
+
+}
+
+
+.next-1 input {
+    border: 1px solid gold;
+    background-color: white;
+    width: 70%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+.container-8 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-8 .letter-2 {
+    display: flex;
+    padding-bottom: 120px;
+}
+
+
+.container-8 .letter-2 h5 a {
+    display: flex;
+    padding-left: 100px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.container-8 .letter-2 h5 a:hover {
+
+    color: gold;
+}
+
+
+.container-8 .next-2 a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #818181;
+
+}
+
+
+
+.container-8 .next-2 a i {
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: gold;
+    color: #fff;
+
+}
+
+
+.container-8 .next-2 a i:hover {
+    color: black;
+    background-color: #fff;
+}
+
+
+
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .fo b {
+    color: gold;
+}
+
+footer .ot a {
+    font-size: 50px;
+    color: gold;
+    word-spacing: 50px;
+    padding: 0px 20px;
+}
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.disppear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:800px) {
+
+
+    /* first header */
+    .first {
+
+        color: #fff;
+        padding: 10px 50px;
+
+    }
+
+
+    .first .first-1 {
+        display: none;
+    }
+
+
+    .first .first-1 p b {
+        color: gold;
+    }
+
+
+
+    .first .first-2 {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+
+    .first .first-2 a p {
+        color: gray;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+
+
+
+    .first .first-2 i {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    /* first header */
+
+
+    /*  navbar header */
+
+
+
+
+    header {
+        align-items: normal;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* width: 100%; */
+        display: flex;
+        padding: 2px 0px;
+        justify-content: space-between;
+        transition: background-color 2s ease;
+        margin-right: 0;
+        z-index: 1;
+
+    }
+
+    .logo {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+
+
+    .logo h2 {
+        margin-top: 60px;
+    }
+
+
+
+    .next {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+
+
+    .sidepanel ul li:hover .dropdown ul {
+        display: none;
+    }
+
+
+    .sidepanel ul li:hover .dropdown {
+
+        display: none;
+
+
+    }
+
+
+    .nav-toggle {
+        width: 25px;
+    }
+
+    .close,
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+
+    .sidepanel {
+        height: 100%;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #090220;
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 2s;
+        /* 0.5 second transition effect to slide in the sidepanel */
+        display: block;
+
+    }
+
+
+    .sidepanel ul {
+        float: none;
+        margin-right: 0;
+        display: block;
+        opacity: 0.5;
+    }
+
+
+    .dropdown ul {
+        border: 1px solid black;
+        background-color: gray;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+
+
+    .sidepanel li {
+        display: inline-block;
+        margin-right: 0px;
+        border-bottom: 1px white solid;
+        border-top: 1px white solid;
+        width: 100%;
+    }
+
+    /* The sidepanel links */
+    .sidepanel li a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+
+    }
+
+    .sidepanel h1 {
+        color: #fff;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+
+    .sidepanel h1 i {
+        color: gold;
+        padding-bottom: 50px;
+
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel li a:hover {
+        color: gold;
+        border-top: 1px solid gold;
+        border-bottom: 1px solid gold;
+        padding-left: 50px;
+        transition: all;
+        transition-duration: 2s;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 36px;
+        margin-right: 30px;
+        border: 1px solid transparent;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 60px;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        padding: 0px 15px;
+        margin-inline: 0;
+        justify-content: space-between;
+        display: block;
+    }
+
+    .openbtn:hover {
+        color: gold;
+        transition: 2sec;
+
+    }
+
+    .closebtn:hover {
+        color: gold;
+        border: none;
+        transform: rotate(360deg);
+        transition: 5s;
+        transition-duration: 2s;
+    }
+
+
+    .container {
+        z-index: 1;
+    }
+
+
+
+    .container-2 {
+        display: block;
+    }
+
+
+    .container-2 .film video {
+        width: 100%;
+
+    }
+
+
+
+
+
+    .yellow {
+
+        margin: 100px 0;
+        padding: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    .inp {
+        display: block;
+        font-weight: 1000;
+        padding: 50px 0;
+    }
+
+    .yellow input {
+        background-color: #fff;
+        height: 60px;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+    }
+
+    .inp button {
+        margin: 50px 0;
+        width: 150px;
+        height: 60px;
+        color: gold;
+        background-color: #000;
+        border: 1px solid #fff;
+        border-radius: 20px;
+    }
+
+
+
+    .inp button:hover {
+
+        background-color: gold;
+        width: 150px;
+        height: 60px;
+        color: #000;
+        border: 1px solid #fff;
+        transition: all 1s;
+
+    }
+
+
+    .container-7 {
+        display: block;
+        text-align: center;
+    }
+
+
+
+    .container-7 .letter {
+        padding: 50px 0px;
+        text-align: left;
+    }
+
+
+    .container-7 .letter h5 {
+        padding-left: 30px;
+
+    }
+
+
+
+    .container-8 {
+        display: block;
+        text-align: center;
+
+    }
+
+    .container-8 .letter-2 {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+
+    .container-8 .letter-2 h5 a {
+        display: flex;
+        padding-left: 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+
+    .container-8 .letter-2 h5 a:hover {
+
+        color: gold;
+    }
+
+
+    .container-8 .next-2 a {
+        padding-right: 10px;
+        text-decoration: none;
+        color: #818181;
+
+    }
+
+
+
+    .container-8 .next-2 a i {
+        border-radius: 50%;
+        border: 1px solid grey;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        transition: all 0.5s linear;
+
+    }
+
+
+    .container-8 .next-2 a i:hover {
+        transform: scale(1.5);
+        color: gold;
+    }
+
+
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer .fo b {
+        color: gold;
+    }
+
+
+    footer .fo {
+        padding: 50px 0px;
+    }
+
+
+
+    footer .ot a {
+
+        font-size: 20px;
+        color: gold;
+        word-spacing: 10px;
+    }
+
+
+    #preloader {
+        background: #000 url('giphy.gif') no-repeat center center;
+        background-size: 100%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+
+    }
+
+
+
+}
+
+
+
+
+.mySidepanel-checkbox:checked~ul li,
+.header i {
+    display: block;
+}
+
+#mySidepanel:checked~label.nav-toggle .open {
+    display: none;
+}
+
+
+#mySidepanel:checked~label.nav-toggle .close {
+    display: block;
+}
