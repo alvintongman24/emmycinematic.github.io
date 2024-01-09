@@ -1,0 +1,1767 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(196, 225, 237);
+    color: #000;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+
+.disppear {
+    animation: vanish 1ms forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+body {
+    font-family: "open Sans", sans-serif;
+    background-image: url("camera-lens-closeup-nq.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+
+#nav-checkbox,
+.nav-toggle {
+    display: none;
+}
+
+header {
+    display: inline-flex;
+    position: sticky;
+    background-color: skyblue;
+    transition: top 0.3s;
+    width: 100%;
+    height: 20%;
+    color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.changecolor i {
+    display: inline-block;
+    font-size: 38px;
+    color: red;
+    animation: rotate 2s linear infinite;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: black;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.next i {
+    margin-bottom: 10px;
+}
+
+.next input {
+    border: 1px solid red;
+    background-color: #000;
+    width: 15%;
+    height: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    position: fixed;
+    margin-left: 600px;
+
+}
+
+
+
+.logo {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 100px;
+    font-style: italic;
+    margin-top: 2%;
+    margin-left: 0;
+}
+
+
+
+.closebtn,
+.openbtn {
+    display: none;
+
+}
+
+.logo h2 i {
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+.logo h2 {
+    color: #000;
+    text-transform: lowercase;
+    font-weight: 2px;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+
+.sidepanel h1 {
+    display: none;
+}
+
+
+.sidepanel ul {
+    float: right;
+    margin-right: 40px;
+    display: flex;
+    position: fixed;
+    color: #000;
+}
+
+.sidepanel li {
+    display: block;
+    margin-right: 50px;
+    line-height: 80px;
+    color: #000;
+}
+
+.sidepanel li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    display: block;
+}
+
+
+
+.sidepanel li a:hover {
+    color: red;
+    transition: 0.5s;
+
+}
+
+
+
+.sidepanel ul li:hover .dropdown {
+
+    display: block;
+    margin-top: 0px;
+
+
+}
+
+/*oka*/
+
+.dropdown ul {
+    border: 1px solid white;
+    background-color: gray;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+
+.sidepanel ul li:hover .dropdown ul {
+    float: none;
+    display: block;
+    margin: 0px;
+    position: fixed;
+}
+
+
+
+.dropdown {
+    display: none;
+
+}
+
+
+
+/* section */
+.first .conatiner-1 {
+    margin-left: 20px;
+    margin-top: 50px;
+    color: #000;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.first .conatiner-1 h6 {
+    color: red;
+}
+
+
+.first .conatiner-1 b {
+    color: red;
+}
+
+.first .flex {
+    display: flex;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.first .flex p {
+    margin-left: 15px;
+}
+
+
+.first .flex .pg {
+    background-color: #000;
+    color: #818181;
+    border: 1px solid #090220;
+    width: 50px;
+    padding: 5px;
+
+}
+
+
+.first .flex .hd {
+    color: #000;
+    border: 1px solid black;
+    width: 40px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+
+.first .flex .cal,
+.clock {
+    color: #818181;
+    border: 1px solid transparent;
+    padding-top: 5px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+
+.first .flex i {
+    color: red;
+}
+
+.first button {
+    margin-top: 50px;
+    margin-left: 15px;
+    border: 1px solid red;
+    background-color: whitesmoke;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+.first button:hover {
+
+    background-color: red;
+    color: #000;
+    transition: 1s;
+}
+
+
+
+section {
+    content-visibility: auto;
+}
+
+
+
+.secornd {
+    background-image: url("windows-11-5k-light-l6.jpeg");
+    background-size: cover;
+
+    width: 100%;
+    color: #000;
+    margin-top: 200px;
+    margin-right: 0;
+
+}
+
+.container-2 {
+
+    padding-top: 100px;
+    display: flex;
+}
+
+
+.container-2 p {
+    color: red;
+    font-size: smaller;
+    padding-bottom: 20px;
+}
+
+.container-2 h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+
+
+.container-2 .btn {
+    display: flex;
+    margin-left: 450px;
+    margin-bottom: 60px;
+}
+
+.container-2 button {
+    padding-bottom: 3px;
+    border: 2px solid red;
+    background-color: whitesmoke;
+    color: #000;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    align-items: right;
+    margin-right: 20px;
+
+}
+
+
+.container-2 button:hover {
+
+    background-color: red;
+    color: #000;
+    transition: 1s;
+}
+
+
+.images img {
+
+    z-index: 1;
+}
+
+
+.animation {
+    padding-top: 100px;
+    display: flex;
+}
+
+.animation .image-2 img {
+    border: 30px solid whitesmoke;
+    width: 90%;
+    height: 550px;
+}
+
+
+.animation .image-2 {
+
+    width: 60%;
+    height: 550px;
+    margin-bottom: 150px;
+}
+
+.animation .words {
+    width: 40%;
+    padding-left: 150px;
+
+}
+
+.note1 {
+    display: flex;
+}
+
+
+.note1:hover .icon {
+    background-color: red;
+    color: #000
+}
+
+.note1 .icon {
+    font-size: 50px;
+    border: 2px dotted red;
+    border-radius: 50%;
+    height: 60px;
+    width: 150px;
+    padding: 15px;
+
+}
+
+.note1 .write {
+    margin-left: 20px;
+}
+
+
+
+
+.third {
+    background-image: url("laptop.jpg");
+    background-position: 20px;
+    width: 100%;
+    color: red;
+    margin-top: 200px;
+    overflow: hidden;
+
+}
+
+.container-3 {
+    box-sizing: border-box;
+    padding-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+
+.container-3 p {
+    color: red;
+    font-size: smaller;
+    padding-bottom: 20px;
+}
+
+.container-3 h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+
+
+.container-3 .btn {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.third .container-3 .btn button a {
+    text-decoration: none;
+    list-style: none;
+    color: #bc2a2a;
+
+}
+
+.container-3 button {
+    padding-bottom: 0px;
+    border: 2px solid red;
+    background-color: white;
+    color: #000;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 10px;
+    transition: all 2s linear;
+    /* margin-right: 10px; */
+
+}
+
+
+.container-3 button:hover {
+
+    background-color: white;
+    color: black;
+    border-top: 2px solid #fff;
+    border-left: 2px solid red;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid red;
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+
+
+.conatiner-4 {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    background: white;
+    max-width: 325px;
+    width: 325px;
+    height: auto;
+    margin: 25px;
+    /* box-shadow: 0 5px 2c5px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    overflow: hidden;
+    color: #000;
+    transition: all 0.4s linear;
+}
+
+.card:hover {
+    box-shadow: 0 0px 0px 2px rgb(255, 255, 255);
+    /* box-shadow: 0 5px 25px 0px rgba(2, 1, 1, 0.5); */
+    transform: scale(1.05);
+    max-width: 390px;
+
+}
+
+.card-image {
+    max-height: 200px;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card .all {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.card .all i,
+.card .all h4 {
+    color: red;
+}
+
+.container-3 {
+    display: flex;
+    color: #000;
+}
+
+
+
+.text button {
+    margin-top: 50px;
+    margin-left: 15px;
+    border: 1px solid red;
+    background-color: #fff;
+    color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+
+.container-5 {
+    display: flex;
+    color: #fff;
+    background-color: #d6e0ff;
+    padding: 200px 0;
+
+}
+
+.container-5 .text-1 {
+    padding: 0 100px;
+}
+
+
+.text-1 button {
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 1px solid red;
+    background-color: white;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+
+.animation .words {
+    width: 40%;
+    padding-left: 150px;
+
+}
+
+
+
+.container-5 p {
+    color: red;
+    font-size: smaller;
+    padding-bottom: 20px;
+}
+
+.container-5 h1 {
+    font-size: 40px;
+    margin: 20px;
+    margin-left: 0px;
+    border: 1px solid white;
+    background-color: #818181;
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    box-shadow: 25px 20px 20px rgb(255, 255, 255);
+}
+
+
+.container-5 h2 {
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+
+.text-1 button:hover {
+
+    background-color: red;
+    color: #000;
+    transition: 1s;
+}
+
+
+.image-2 img {
+    overflow: hidden;
+}
+
+
+.container-6 {
+    background-image: url("windows-11-5k-light-l6.jpeg");
+    padding-top: 100px;
+    background-size: cover;
+    width: 100%;
+    color: #000;
+    margin-top: 200px;
+    margin-right: 0;
+}
+
+
+.container-6 p {
+    color: red;
+    font-size: smaller;
+    padding-bottom: 20px;
+}
+
+.container-6 h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+
+
+.container-6 .text-6 {
+    display: block;
+    padding: 20px;
+    margin-bottom: 60px;
+    font-size: large;
+}
+
+
+.game {
+    padding: 100px 0;
+  }
+  
+  .pigtop {
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .pigtop h1 {
+    padding-bottom: 20px;
+    font-size: 2em;
+    color: brown;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    animation: changeSizeAndColor 4s infinite alternate;
+  }
+  
+  @keyframes changeSizeAndColor {
+    0% {
+      color: brown;
+    }
+  
+    50% {
+      color: yellowgreen;
+  
+    }
+  
+    100% {
+      color: plum;
+  
+    }
+  }
+  
+  
+  .pigtop p {
+  
+    padding-bottom: 10px;
+    color: black;
+    animation: change 4s infinite alternate;
+    text-shadow: 0 0 10px rgb(255, 201, 5);
+  }
+  
+  @keyframes change {
+    0% {
+      color: black;
+    }
+  
+    50% {
+      color: red;
+  
+    }
+  
+    100% {
+      color: greenyellow;
+  
+    }
+  }
+  
+
+
+
+.container-9 {
+    width: 70%;
+    background-color:rgb(193, 219, 230);
+    border: 1px sold dotted black;
+    margin: 0 10%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+
+
+  
+  
+  
+  .Player1,
+  .player2 {
+    border: 1px solid white;
+    background-color: whitesmoke;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  
+  
+  .current1-active{
+    border: 1px solid  whitesmoke;
+    background-color: skyblue;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  
+  
+  .current2{
+    border: 1px solid skyblue;
+    background-color:  skyblue;
+    
+  }
+  
+  
+  .winner{
+    background-color: greenyellow;
+    color: #fff;
+  }
+  
+  
+  
+  
+  .Player1 h1,
+  .player2 h1,
+  .player1 h3,
+  .player2 h3 {
+    padding: 20px 0;
+    color: brown;
+  }
+  
+  
+  
+  .Player1 number,
+  .player2 number {
+    color: black;
+    font-size: 50px;
+  }
+  
+   .current,
+  .current {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    font-size: medium;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .rollerdice {
+    text-align: center;
+    color: red;
+  
+  }
+  
+  
+  .rollerdice button {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: whitesmoke;
+    font-weight: bold;
+  
+  
+  }
+  
+  
+  .rollerdice button:hover {
+  color: #fff;
+    background-color: palevioletred;
+    transition: 1ms;
+    transition-delay: 1ms;
+  
+  
+  }
+  
+  
+  
+  .rollerdice button:active {
+  
+    background-color: yellow;
+  
+  
+  }
+  
+  
+  picture img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  
+  
+
+
+
+
+.yellow {
+    background-color: red;
+    margin: 100px 0;
+    padding: 30px;
+    color: #fff;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inp {
+    display: flex;
+    font-weight: 1000;
+}
+
+.yellow input {
+    background-color: rgb(255, 247, 247);
+    height: 60px;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+.inp button {
+    margin-left: -50px;
+    width: 150px;
+    height: 60px;
+    color: gold;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+
+
+.inp button:hover {
+
+    background-color: red;
+    width: 150px;
+    height: 60px;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 1s;
+
+}
+
+
+.container-7 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    background-image: url("windows-11-5k-light-l6.jpeg");
+}
+
+
+
+
+.container-7 .letter {
+    display: flex;
+}
+
+
+.container-7 .letter h5 {
+    display: flex;
+    padding-left: 80px;
+
+}
+
+
+.container-7 .letter h5 a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+
+.container-7 .letter h5 a:hover {
+
+    color: red;
+
+}
+
+
+.log h2 i {
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid red;
+}
+
+.next-1 input {
+    border: 1px solid red;
+    background-color: black;
+    width: 70%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+.container-8 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    background-image: url("windows-11-5k-light-l6.jpeg");
+
+
+}
+
+.container-8 .letter-2 {
+    display: flex;
+    padding-bottom: 120px;
+}
+
+
+.container-8 .letter-2 h5 a {
+    display: flex;
+    padding-left: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.container-8 .letter-2 h5 a:hover {
+
+    color: red;
+}
+
+
+.container-8 .next-2 a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #818181;
+
+}
+
+
+
+.container-8 .next-2 a i {
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: white;
+    color: #000;
+
+}
+
+
+.container-8 .next-2 a i:hover {
+    color: white;
+    background-color: red;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .fo b {
+    color: red;
+}
+
+footer .ot a {
+    font-size: 50px;
+    color: red;
+    word-spacing: 50px;
+    padding: 0px 20px;
+}
+
+
+#preloader {
+    background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.disppear {
+    animation: vanish 0.5ms forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media(max-width:800px) {
+
+    html{
+        font-size: smaller;
+    }
+
+
+    .container-2 {
+        display: block;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+
+
+
+    .secornd {
+
+        width: 100%;
+    }
+
+
+
+    .container-2 .btn {
+
+        margin-left: 200px;
+        margin-left: 100px;
+    }
+
+
+    .container-2 p {
+        color: red;
+        font-size: smaller;
+        padding-left: 80px;
+        text-align: center;
+    }
+
+    .container-2 h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+        text-align: center;
+        color: #fff;
+
+    }
+
+
+    .first .conatiner-1 {
+        margin-top: 200px;
+        color: #000;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+
+
+
+
+    header {
+        align-items: normal;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        /* width: 100%; */
+        display: flex;
+        padding: 2px 0px;
+        justify-content: space-between;
+        transition: background-color 2s ease;
+        margin-right: 0;
+    }
+
+    .logo {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: 0 10px;
+    }
+
+
+    .logo h2 {
+        margin-top: 40px;
+    }
+
+
+
+    .next {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        top: 25px;
+        right: 0;
+    }
+
+
+    .sidepanel ul li:hover .dropdown ul {
+        display: none;
+    }
+
+
+    .sidepanel ul li:hover .dropdown {
+
+        display: none;
+
+
+    }
+
+
+    .nav-toggle {
+        width: 25px;
+    }
+
+    .close,
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+
+    .sidepanel {
+        height: 100%;
+        /* Specify a height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #b1b7e5;
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 2s;
+        /* 0.5 second transition effect to slide in the sidepanel */
+        display: block;
+
+
+    }
+
+
+    .sidepanel ul {
+        float: none;
+        margin-right: 0;
+        display: block;
+        opacity: 0.5;
+    }
+
+
+    .dropdown ul {
+        border: 1px solid white;
+        background-color: gray;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+
+
+    .sidepanel li {
+        display: inline-block;
+        margin-right: 0px;
+        border-bottom: 1px black solid;
+        border-top: 1px black solid;
+        width: 100%;
+    }
+
+    /* The sidepanel links */
+    .sidepanel li a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #e41313;
+        transition: 0.3s;
+
+    }
+
+    .sidepanel h1 {
+        color: #000;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+
+    .sidepanel h1 i {
+        color: red;
+        padding-bottom: 50px;
+
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidepanel li a:hover {
+        color: red;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        padding-left: 50px;
+        transition: all;
+        transition-duration: 2s;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 36px;
+        margin-right: 30px;
+        border: 1px solid transparent;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        padding-top: 60px;
+    }
+
+    /* Style the button that is used to open the sidepanel */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: black;
+        padding: 10px 15px;
+        margin-inline: 0;
+        justify-content: space-between;
+        display: block;
+    }
+
+    .openbtn:hover {
+        color: red;
+        transition: 2sec;
+
+    }
+
+    .closebtn:hover {
+        color: red;
+        border: none;
+        transform: rotate(360deg);
+        transition: 5s;
+        transition-duration: 2s;
+    }
+
+
+
+    .animation {
+        padding-bottom: 100px;
+        display: block;
+    }
+
+
+    .animation .image-2 {
+
+        width: 95%;
+        height: 100px;
+        margin-bottom: 200px;
+        margin-left: 10px;
+
+    }
+
+
+    .animation .image-2 img {
+        border: 2px solid red;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 200px;
+    }
+
+
+    .animation .words {
+        width: 90%;
+        padding-left: 30px;
+        padding-top: 100px;
+    }
+
+
+
+    .note1 .write {
+        margin-left: 0px;
+
+    }
+
+
+
+    .container-3 .btn {
+        margin-left: 20px;
+    }
+
+
+    .container-3 p {
+        color: red;
+        font-size: smaller;
+        padding-left: 50px;
+        text-align: center;
+    }
+
+    .container-3 h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        text-align: center;
+
+    }
+
+
+    .container-3 {
+        display: block;
+        text-align: center;
+
+    }
+
+
+
+
+
+    .container-3 {
+
+        display: block;
+        /* text-align: left; */
+        /* padding-left:0px ; */
+        padding-bottom: 120px;
+    }
+
+    .container-3 .text {
+        /* display: block; */
+        text-align: left;
+        padding-left: 0%;
+    }
+
+
+
+
+
+    .container-5 {
+
+        display: block;
+        padding: 0;
+
+    }
+
+    .text-1 {
+        padding-top: 10px;
+    }
+
+
+
+    .container-5 {
+        display: block;
+        padding: 0px 0;
+
+    }
+
+
+    .container-5 p {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+
+    .container-5 h1 {
+        font-size: 25px;
+        margin: 20px;
+        padding: 40px;
+        margin-left: 0px;
+        border: 1px solid white;
+        background-color: #818181;
+        width: 150px;
+        height: 20px;
+        box-shadow: 25px 20px 20px rgb(255, 255, 255);
+    }
+
+
+    .text-1 button {
+        width: 200px;
+        margin-bottom: 50px;
+
+    }
+
+    .image-2 img {
+        width: 100%;
+        padding-bottom: 20%;
+    }
+
+
+    .container-9 {
+        width: 100%;
+        background-color:skyblue;
+        border: 1px sold dotted white;
+        margin: 0 0;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+      }
+      
+      
+      
+
+.Player1,
+.player2 ,.current1-active,
+.current2,.current{
+    border: 1px solid rgb(213, 233, 241);
+    background-color: rgb(213, 233, 241);
+  padding:0px 0px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+      
+      .Player1,
+      .player2 {
+        border: 1px solid rgb(213, 233, 241);
+        background-color: rgb(213, 233, 241);
+        padding:50px 0px;
+        text-align: center;
+        border-radius: 0px;
+        margin-top: 0;
+      }
+      
+      
+      
+      
+      
+      
+      .winner{
+        background-color: rgb(243, 229, 203);
+        color: #fff;
+      }
+      
+      
+      
+      
+      .Player1 h1,
+      .player2 h1,
+      .player1 h3,
+      .player2 h3 {
+        border: 1px solid transparent;
+        padding: 0px 0px;
+        color: brown;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      .Player1 number,
+      .player2 number {
+        color: black;
+        font-size: 50px;
+      }
+      
+      
+       .current {
+        border: 1px solid transparent;
+        background-color: transparent;
+        font-size: medium;
+        padding: 0px 1px;
+        margin-top: 20px;
+      }
+      
+      
+      
+      .rollerdice {
+        text-align: center;
+        color: red;
+      
+      }
+      
+      
+      .rollerdice button {
+        border-radius: 10px;
+        padding:20px;
+        margin: 20px 0;
+        background-color: rgb(220, 204, 204);
+        font-weight: bold;
+      
+      
+      }
+      
+      
+      .rollerdice button:hover {
+      
+        background-color: rgb(207, 207, 255);
+        transition: 1ms;
+        transition-delay: 1ms;
+      
+      
+      }
+      
+      
+      
+      .rollerdice button:active {
+      
+        background-color: rgb(240, 255, 225);
+      
+      
+      }
+      
+      
+      picture img {
+        width: 50px;
+        height: 50px;
+        margin: 20px 0;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+      
+      
+      
+
+
+    .yellow {
+
+        margin: 100px 0;
+        padding: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    .inp {
+        display: block;
+        font-weight: 1000;
+        padding: 50px 0;
+    }
+
+    .yellow input {
+        background-color: #000;
+        height: 60px;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #000;
+        border-radius: 20px;
+    }
+
+    .inp button {
+        margin: 50px 0;
+        width: 150px;
+        height: 60px;
+        color: red;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 20px;
+    }
+
+
+
+    .inp button:hover {
+
+        background-color: red;
+        width: 150px;
+        height: 60px;
+        color: #000;
+        border: 1px solid #000;
+        transition: all 1s;
+
+    }
+
+
+    .container-7 {
+        display: block;
+        text-align: center;
+    }
+
+
+
+    .container-7 .letter {
+        padding: 50px 0px;
+        text-align: left;
+    }
+
+
+    .container-7 .letter h5 {
+        padding-left: 30px;
+
+    }
+
+
+
+    .container-8 {
+        display: block;
+        text-align: center;
+
+    }
+
+    .container-8 .letter-2 {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+
+    .container-8 .letter-2 h5 a {
+        display: flex;
+        padding-left: 20px;
+        text-decoration: none;
+        color: #000;
+    }
+
+
+
+    .container-8 .letter-2 h5 a:hover {
+
+        color: red;
+    }
+
+
+    .container-8 .next-2 a {
+        padding-right: 10px;
+        text-decoration: none;
+        color: #818181;
+
+    }
+
+
+
+    .container-8 .next-2 a i {
+        border-radius: 50%;
+        border: 1px solid grey;
+        padding: 10px;
+        background-color: #fff;
+        color: #000;
+        transition: all 0.5s linear;
+
+    }
+
+
+    .container-8 .next-2 a i:hover {
+        transform: scale(1.5);
+        color: red;
+    }
+
+
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer .fo b {
+        color: red;
+    }
+
+
+    footer .fo {
+        padding: 50px 0px;
+    }
+
+
+
+    footer .ot a {
+
+        font-size: 20px;
+        color: red;
+        word-spacing: 10px;
+    }
+
+
+    #preloader {
+        background: #000 url('giphy.gif') no-repeat center center;
+        background-size: 100%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+
+    }
+
+
+
+
+
+}
+
+.mySidepanel-checkbox:checked~ul li,
+.header i {
+    display: block;
+}
+
+#mySidepanel:checked~label.nav-toggle .open {
+    display: none;
+}
+
+
+#mySidepanel:checked~label.nav-toggle .close {
+    display: block;
+}
