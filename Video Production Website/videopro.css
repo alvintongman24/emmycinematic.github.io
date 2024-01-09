@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  background-color: #000;
+  
 }
 
 
@@ -8,9 +10,35 @@ html {
   padding: 0;
 
 
-
-  /* body */
 }
+
+/* body */
+
+
+
+#preloader {
+  background: #000 url('giphy\ \(1\).gif') no-repeat center center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+
+.disppear {
+  animation: vanish 1ms forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
 
 body {
   font-family: "open Sans", sans-serif;
@@ -20,6 +48,12 @@ body {
   height: 100%;
   box-sizing: border-box;
   width: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+body .fade-out {
+  opacity: 0;
 }
 
 /* boby */
@@ -43,6 +77,30 @@ header {
   right: 0;
   opacity: 0.9;
   z-index: 1;
+}
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.changecolor i {
+  display: inline-block;
+  font-size: 38px;
+  color: red;
+  animation: rotate 2s linear infinite;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 10px;
 }
 
 
@@ -181,7 +239,7 @@ header {
 /* section */
 .first .conatiner-1 {
   margin-left: 20px;
-  margin-top: 400px;
+  margin-top: 50px;
   color: #fff;
   font-size: 50px;
   font-weight: bolder;
@@ -259,6 +317,14 @@ header {
   color: #000;
   transition: 1s;
 }
+
+
+
+section {
+  content-visibility: auto;
+}
+
+
 
 .secornd {
   background-image: url("lost.jpg");
@@ -349,7 +415,6 @@ header {
   width: 40%;
   padding-left: 150px;
 
-
 }
 
 .note1 {
@@ -384,6 +449,7 @@ header {
   width: 100%;
   color: #fff;
   margin-top: 200px;
+  overflow: hidden;
 
 }
 
@@ -452,7 +518,6 @@ header {
 
 .conatiner-4 {
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -556,9 +621,16 @@ header {
 }
 
 
+.animation .words {
+  width: 40%;
+  padding-left: 150px;
+
+}
+
+
 
 .container-5 p {
-  color: gold;
+  color: red;
   font-size: smaller;
   padding-bottom: 20px;
 }
@@ -590,6 +662,9 @@ header {
 }
 
 
+.image-2 img {
+  overflow: hidden;
+}
 
 
 .container-6 {
@@ -622,6 +697,192 @@ header {
   margin-bottom: 60px;
   font-size: large;
 }
+
+
+.game {
+  padding: 100px 0;
+}
+
+.pigtop {
+  text-align: center;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+}
+
+.pigtop h1 {
+  padding-bottom: 20px;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  animation: changeSizeAndColor 4s infinite alternate;
+}
+
+@keyframes changeSizeAndColor {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: yellowgreen;
+
+  }
+
+  100% {
+    color: gold;
+
+  }
+}
+
+
+.pigtop p {
+
+  padding-bottom: 10px;
+  color: goldenrod;
+  animation: change 4s infinite alternate;
+  text-shadow: 0 0 10px rgb(255, 201, 5);
+}
+
+@keyframes change {
+  0% {
+    color: goldenrod;
+  }
+
+  50% {
+    color: red;
+
+  }
+
+  100% {
+    color: skyblue;
+
+  }
+}
+
+
+.container-9 {
+  width: 70%;
+  background-color: #818181;
+  border: 1px sold dotted white;
+  margin: 0 10%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+
+
+.Player1,
+.player2 {
+  border: 1px solid yellow;
+  background-color: yellow;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+
+.current1-active{
+  border: 1px solid greenyellow;
+  background-color:yellow;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+.current2{
+  border: 1px solid greenyellow;
+  background-color: yellowgreen;
+  
+}
+
+
+.winner{
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+.Player1 h1,
+.player2 h1,
+.player1 h3,
+.player2 h3 {
+  padding: 20px 0;
+  color: brown;
+}
+
+
+
+.Player1 number,
+.player2 number {
+  color: black;
+  font-size: 50px;
+}
+
+.Player1 .current,
+.player2 .current {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  font-size: medium;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+.rollerdice {
+  text-align: center;
+  color: red;
+
+}
+
+
+.rollerdice button {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: whitesmoke;
+  font-weight: bold;
+
+
+}
+
+
+.rollerdice button:hover {
+
+  background-color: gold;
+  transition: 1ms;
+  transition-delay: 1ms;
+
+
+}
+
+
+
+.rollerdice button:active {
+
+  background-color: lawngreen;
+
+
+}
+
+
+picture img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 
 
 .yellow {
@@ -729,6 +990,7 @@ header {
 .container-8 {
   display: flex;
   justify-content: space-between;
+  padding-top: 100px;
 }
 
 .container-8 .letter-2 {
@@ -806,7 +1068,7 @@ footer .ot a {
 }
 
 .disppear {
-  animation: vanish 5s forwards;
+  animation: vanish 0.5ms forwards;
 }
 
 @keyframes vanish {
@@ -817,6 +1079,11 @@ footer .ot a {
 }
 
 @media(max-width:800px) {
+
+  html{
+    font-size: smaller;
+    
+  }
 
 
   .container-2 {
@@ -1107,14 +1374,14 @@ footer .ot a {
   .container-3 p {
     color: gold;
     font-size: smaller;
-    padding-left: 80px;
+    padding-left: 50px;
     text-align: center;
   }
 
   .container-3 h1 {
     font-size: 40px;
     padding-bottom: 20px;
-    padding-left: 80px;
+    padding-left: 50px;
     text-align: center;
 
   }
@@ -1197,6 +1464,126 @@ footer .ot a {
     width: 100%;
     padding-bottom: 20%;
   }
+
+
+
+
+.container-9 {
+  width: 80%;
+  background-color: #818181;
+  border: 1px sold dotted white;
+  margin: 0 0;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+
+
+
+.Player1,
+.player2 ,.current1-active,
+.current2,.current{
+  border: 1px solid yellow;
+  background-color: yellow;
+  padding:50px 0px;
+  text-align: center;
+  border-radius: 0px;
+  margin-top: 0;
+}
+
+
+
+
+
+
+.winner{
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+.Player1 h1,
+.player2 h1,
+.player1 h3,
+.player2 h3 {
+  border: 1px solid transparent;
+  padding: 0px 0px;
+  color: brown;
+}
+
+
+
+
+
+
+
+
+.Player1 number,
+.player2 number {
+  color: black;
+  font-size: 50px;
+}
+
+
+ .current {
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: medium;
+  padding: 0px 1px;
+  margin-top: 20px;
+}
+
+
+
+.rollerdice {
+  text-align: center;
+  color: red;
+
+}
+
+
+.rollerdice button {
+  border-radius: 10px;
+  padding:20px;
+  margin: 20px 0;
+  background-color: whitesmoke;
+  font-weight: bold;
+
+
+}
+
+
+.rollerdice button:hover {
+
+  background-color: gold;
+  transition: 1ms;
+  transition-delay: 1ms;
+
+
+}
+
+
+
+.rollerdice button:active {
+
+  background-color: lawngreen;
+
+
+}
+
+
+picture img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 
 
 
@@ -1354,6 +1741,8 @@ footer .ot a {
     z-index: 100;
 
   }
+
+
 
 
 
